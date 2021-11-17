@@ -72,10 +72,11 @@ button {
     width: calc(100% - 140px);
 }
 
-.summary__plan h4 {
+.summary__plan h2 {
     color: #1f2f56;
     font-weight: 900;
     margin-bottom: 5px;
+    font-size: 16px;
 }
 
 .summary__plan p {
