@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background: url(images/pattern-background-desktop.svg) no-repeat center top / cover, #E0E8FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 0;
+}
+
+button {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.summary__card {
+    max-width: 450px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px #766cf11a;
+}
+
+.summary__img {
+    width: 100%;
+}
+
+.summary__body {
+    padding: 40px;
+}
+
+.summary__title {
+    color: #1f2f56;
+    font-weight: 900;
+    text-align: center;
+    font-size: 25px;
+}
+
+.summary__description {
+    color: #7280a7;
+    text-align: center;
+    max-width: 300px;
+    margin: 20px auto 0;
+    font-weight: 500;
+}
+
+.summary__plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5f7ff;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 30px 0;
+}
+
+.summary__plan img {
+    width: 50px;
+}
+
+.summary__plan div {
+    width: calc(100% - 140px);
+}
+
+.summary__plan h4 {
+    color: #1f2f56;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.summary__plan p {
+    color: #7280a7;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.summary__plan a {
+    font-size: 14px;
+    font-weight: 700;
+    color: #3829e0;
+}
+
+.summary__plan a:hover {
+    color: #766CF1;
+    text-decoration: none;
+}
+
+.summary__btns {
+    text-align: center;
+}
+
+.summary__proceed {
+    display: block;
+    width: 100%;
+    background: #3829e0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px #766cf180;
+}
+
+.summary__proceed:hover {
+    background: #766CF1;
+}
+
+.summary__cancel {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #7280a7;
+    transition: .1s;
+}
+
+.summary__cancel:hover {
+    color: #1f2f56;
+}
+
+@media screen and (max-width: 425px) {
+    .summary__body {
+        padding: 30px 20px;
+    }
+    .summary__title {
+        font-size: 22px;
+    }
+    .summary__plan {
+        padding: 10px;
+    }
+    .summary__plan img {
+        width: 40px;
+    }
+    .summary__plan div {
+        width: calc(100% - 110px);
+    }
+}
